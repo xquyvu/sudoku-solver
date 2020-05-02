@@ -81,7 +81,6 @@ class TestNakedTwins(unittest.TestCase):
                         "Your naked_twins function produced an unexpected board.")
 
 
-
 class TestDiagonalSudoku(unittest.TestCase):
     diagonal_grid = '2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3'
     solved_diag_sudoku = {'G7': '8', 'G6': '9', 'G5': '7', 'G4': '3', 'G3': '2', 'G2': '4', 'G1': '6', 'G9': '5',

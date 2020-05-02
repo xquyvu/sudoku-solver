@@ -1,6 +1,6 @@
 import pygame
 from sudoku.sudoku_square import SudokuSquare
-from utils import reconstruct
+from utils import SudokuUtils
 
 
 def get_start_xy(col_index, row_index):
@@ -46,7 +46,8 @@ def get_sudoku_board(values):
 def play(values, result, history):
     size = (700, 700)
 
-    assignments = reconstruct(result, history)
+    sdk = SudokuUtils(history=history)
+    assignments = sdk.reconstruct(result, sdk.history)
     pygame.init()
 
     screen = pygame.display.set_mode(size)
