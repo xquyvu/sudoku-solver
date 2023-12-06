@@ -13,7 +13,7 @@ pycodestyle==2.5.0
 pyflakes==2.1.1
 pygame==1.9.6
 pylint==2.5.0
-requests==2.23.0
+requests==2.31.0
 requests-toolbelt==0.9.1
 six==1.14.0
 toml==0.10.0
